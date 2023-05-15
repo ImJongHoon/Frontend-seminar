@@ -1,0 +1,22 @@
+span{
+    font-size: 20px;
+}
+
+span:nth-child(odd){
+    background-color: red;
+}
+span:nth-child(even){
+    background-color: blue;
+}
+span:nth-child(5n){
+    color: white;
+}
+
+div span:nth-child(n) {
+    background-color: transparent;
+}
+
+div > span:nth-child(n){
+    font-weight: 800;
+    font-size: 30px;
+}

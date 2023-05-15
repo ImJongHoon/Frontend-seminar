@@ -1,0 +1,79 @@
+@import "./css/reset.css";
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    width: 100vw;
+    height: 115vh;
+    display: -ms-grid;
+    display: grid
+}
+
+body .top {
+    position: fixed;
+    width: 100vw;
+    height: 5vh;
+    display: flex
+}
+
+body .top div,
+body main .top div {
+    background-color: #000;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 1vh 1vh 0
+}
+
+body .top div:nth-child(1),
+body main .top div:nth-child(1) {
+    padding-left: 1vh
+}
+
+body .top div select,
+body main .top div select {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5vh;
+    padding-left: 1vh
+}
+
+body main {
+    margin-top: 5vh;
+    display: -ms-grid;
+    display: grid;
+    gap: 1vh;
+    background-color: #000;
+    -ms-grid-rows: 440px 1vh 440px 1vh 440px;
+    grid-template-rows: repeat(3, 440px);
+    grid-template-columns: repeat(auto-fit, 600px);
+    grid-auto-rows: 440px;
+    justify-content: center
+}
+
+body main .main_div {
+    padding: 1.5vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between
+}
+
+body main .main_div .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2vh;
+    font-weight: 600
+}
+
+body main .top {
+    position: absolute;
+    width: 100vw;
+    height: 5vh;
+    display: flex
+}

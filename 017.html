@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one"></div>
+
+    <div class="two">
+        <div class="three"></div>
+    </div>
+
+    <style>
+        body{
+            height: 300vh;
+            display: flex;
+        }
+
+        .one{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+
+        }
+        .two{
+            width: 400px;
+            height: 400px;
+
+            background-color: blue;
+            position: relative;
+            right: 80px;
+
+        }
+        .three{
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+            background-color: green;
+
+            position: absolute;
+            bottom: 10px;
+            right: 50px;
+        }
+    </style>
+</body>
+</html>
